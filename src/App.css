@@ -1,38 +1,36 @@
 .App {
   text-align: center;
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainBtn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainBtn:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ballsDiv {
+  display: inline-block;
+  margin: 5px 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lotteryBall {
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  min-width: 50px;
+  min-height: 50px;
+  line-height: 50px;
+  border-radius: 100%;
+  background: radial-gradient(100px 100px at 0 0, #5cabff, #000);
+  vertical-align: middle;
 }

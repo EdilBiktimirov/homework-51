@@ -7,7 +7,7 @@ interface ballProps extends React.PropsWithChildren{
 const LotteryBall: React.FC<ballProps> = props => {
   return (
     <div className="ballsDiv">
-      <div className="lotteryBall">{props.ballNumber}</div>
+      <span className="lotteryBall">{props.ballNumber}</span>
     </div>
   );
 };
